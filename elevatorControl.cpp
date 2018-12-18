@@ -20,6 +20,7 @@ void Elevator::init(){
     relayController.setAddress(0,0,0);
     evalJumpers();
     scan();
+    Serial1.print("(4101000)=7");
 }
 
 bool Elevator::goToFloor(int position){
